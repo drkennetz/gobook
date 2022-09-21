@@ -1,4 +1,4 @@
-package main
+package positive
 
 func FindFirstPositiveNotInList(arr []int) int {
 	found := []bool{true}

@@ -1,4 +1,4 @@
-package main
+package positive
 
 import (
 	"fmt"
@@ -17,7 +17,8 @@ func TestFindFirstPositiveNotInList(t *testing.T) {
 		{input: []int{}, result: 1},
 	}
 	for i, v := range cases {
-		if v.result != FindFirstPositiveNotInList(v.input) {
+		res := FindFirstPositiveNotInList(v.input)
+		if v.result != res {
 			fmt.Println("Failed test:", i)
 		}
 	}
